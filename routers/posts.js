@@ -14,6 +14,11 @@ router.get('/:id', (req, res) => {
     res.send(`Visualizzo il singolo post ${req.params.id}`)
 })
 
+//store
+router.post('/', (req,res) =>{
+    res.send("Creao un nuovo post")
+})
+
 
 //esporto il router dei post
 module.exports = router;
