@@ -59,8 +59,10 @@ app.get("/post", (req, res) =>{
           tags: ["Dolci", "Dolci al cioccolato", "Torte", "Ricette vegetariane", "Ricette al forno"],
         },
       ];
-      
+      //ritorna la risposta del client 
       res.json(posts)
+
+      //sevre per esportare posts
       module.exports = posts;
 })
 
