@@ -74,7 +74,6 @@ const postsRouter = require("./routers/posts")
 app.use("/posts", postsRouter)
 
 
-
 //metto in ascolto il server
 app.listen(port,()=>{
     console.log(`Server in ascolto alla porta ${port}`)
