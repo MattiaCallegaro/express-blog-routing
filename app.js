@@ -14,7 +14,7 @@ app.get("/", (req, res) =>{
 
 //definisco la rotta post
 app.get("/post", (req, res) =>{
-    const posts = [
+    const post = [
         {
           id: 1,
           title: "Ciambellone",
@@ -60,11 +60,15 @@ app.get("/post", (req, res) =>{
         },
       ];
       //ritorna la risposta del client 
-      res.json(posts)
+      res.json(post)
 
       //sevre per esportare posts
       module.exports = posts;
 })
+
+//importazione rotte
+const postsRouter = require("./routers/posts")
+app.use("/posts", postsRouter)
 
 
 
